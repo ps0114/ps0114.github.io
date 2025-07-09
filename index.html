@@ -2,150 +2,145 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Melino™ - Skincare Redefined</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Melino Skincare</title>
   <style>
     body {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fffaf7;
-      color: #3a3a3a;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
     }
 
     header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 20px 40px;
-      background-color: #f7f5f3;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      justify-content: center;
       position: relative;
+      padding: 20px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ccc;
     }
 
-    header img {
-  height: 200px;
-  width: auto;
-  min-height: 100px;   /* Minimum height to ensure visibility */
-  min-width: 100px;
-  object-fit: contain;
-}
-
-    .brand-title {
+    .logo {
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 80px;
+      left: 20px;
+      height: 60px;
+    }
+
+    .brand-name {
+      font-size: 2.5rem;
       font-weight: bold;
-      color: #6b3e3e;
+      color: #2a2a2a;
     }
 
-    nav a {
-      margin-left: 25px;
-      text-decoration: none;
-      color: #6b3e3e;
-      font-weight: 500;
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
-    .hero {
+    .intro-section {
       display: flex;
       flex-wrap: wrap;
+      gap: 30px;
       align-items: center;
       justify-content: center;
-      padding: 60px 20px;
-      gap: 40px;
     }
 
-    .hero img {
-      max-width: 200px;
+    .intro-section img {
+      max-width: 300px;
+      width: 100%;
       border-radius: 10px;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
     }
 
-    .hero-text {
-      max-width: 100px;
+    .intro-text {
+      flex: 1;
+      min-width: 250px;
     }
 
-    .hero-text h2 {
-      font-size: 34px;
-      color: #6b3e3e;
+    .intro-text h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .intro-text p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .mission-image {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
       margin-bottom: 20px;
     }
 
-    .hero-text p {
-      font-size: 18px;
-      line-height: 1.8;
+    .mission-image img {
+      max-width: 200px;
+      width: 100%;
     }
 
-    .contact {
-      padding: 40px 20px;
-      background-color: #f9f6f4;
+    .mission-section h2 {
       text-align: center;
-    }
-
-    .contact h3 {
+      font-size: 2rem;
       margin-bottom: 10px;
-      font-size: 22px;
-      color: #6b3e3e;
     }
 
-    .contact p {
-      font-size: 16px;
-      margin: 4px;
-    }
-
-    footer {
-      text-align: left;
-      padding: 20px;
-      font-size: 14px;
-      color: #aaa;
+    .mission-section p {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      font-size: 1rem;
+      line-height: 1.6;
     }
 
     @media (max-width: 768px) {
-      .brand-title {
-        font-size: 22px;
+      .brand-name {
+        font-size: 2rem;
       }
 
-      .hero {
+      .intro-section {
         flex-direction: column;
+        text-align: center;
       }
 
-      .hero img {
-        max-width: 100%;
+      .logo {
+        height: 50px;
       }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="logo.png" alt="Melino Logo">
-  <div class="brand-title">Melino™</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="product.html">Products</a>
-  </nav>
-</header>
+  <!-- Header -->
+  <header>
+    <img src="logo.png" alt="Melino Logo" class="logo" />
+    <div class="brand-name">Melino</div>
+  </header>
 
-<section class="hero">
-  <div style="text-align: center; margin-top: 20px;"></div>
-  <img src="image2.png" alt="Melino™ Hero Image"/>
-    <h2>Rooted in Nature, Refined by Science</h2>
+  <!-- Intro Section -->
+  <section class="section intro-section">
+    <img src="image1.png" alt="Nature Image" />
+    <div class="intro-text">
+      <h2>Rooted in Nature</h2>
+      <p>
+        At Melino, we blend the purity of nature with the precision of science to craft skincare products that rejuvenate and restore. Our ingredients are ethically sourced, and every formulation is designed with love and care for your skin.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="section mission-section">
+    <div class="mission-image">
+      <img src="image2.png" alt="Mission Icon" />
+    </div>
+    <h2>Our Mission</h2>
     <p>
-      At <strong>Melino™</strong>, our mission is to craft high-performance skincare that blends the wisdom of natural herbs with the precision of modern science. Every product we create — from our dermatologist-tested procedures — is thoughtfully formulated to nourish, protect, and elevate your skin.<br><br>
-      We are committed to safe, effective, and honest skincare powered by nature-backed ingredients and clinically proven actives. As we grow, we aim to bring the same integrity and innovation to haircare and oral wellness — creating routines that truly care for you, from root to radiance.
+      To empower individuals with clean, effective, and sustainable skincare solutions that celebrate the natural beauty within. We are committed to transparency, quality, and nurturing self-confidence in every drop.
     </p>
-  </div>
-</section>
-
-<section class="contact">
-  <h3>Contact Us</h3>
-  <p>Email: <a href="mailto:zattvaproductions@gmail.com">zattvaproductions@gmail.com</a></p>
-  <p>Phone: <a href="tel:+919205972149">+91 92059 72149</a></p>
-</section>
-
-<footer>
-  &copy; 2025 <strong>Melino™</strong>. All rights reserved.
-</footer>
+  </section>
 
 </body>
 </html>
