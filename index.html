@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Melino - Skincare Redefined</title>
+  <title>Melino™ - Skincare Redefined</title>
   <style>
     body {
       margin: 0;
@@ -19,10 +19,21 @@
       padding: 20px 40px;
       background-color: #f7f5f3;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      position: relative;
     }
 
     header img {
-      height: 48px;
+      height: 6.25vh;
+      width: auto;
+    }
+
+    .brand-title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 28px;
+      font-weight: bold;
+      color: #6b3e3e;
     }
 
     nav a {
@@ -33,20 +44,32 @@
     }
 
     .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
       padding: 60px 20px;
-      text-align: center;
+      gap: 40px;
     }
 
-    .hero h2 {
+    .hero img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h2 {
       font-size: 34px;
       color: #6b3e3e;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
 
-    .hero p {
+    .hero-text p {
       font-size: 18px;
-      max-width: 750px;
-      margin: 0 auto;
       line-height: 1.8;
     }
 
@@ -73,12 +96,27 @@
       font-size: 14px;
       color: #aaa;
     }
+
+    @media (max-width: 768px) {
+      .brand-title {
+        font-size: 22px;
+      }
+
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero img {
+        max-width: 90%;
+      }
+    }
   </style>
 </head>
 <body>
 
 <header>
   <img src="logo.png" alt="Melino Logo">
+  <div class="brand-title">Melino™</div>
   <nav>
     <a href="index.html">Home</a>
     <a href="product.html">Products</a>
@@ -86,11 +124,14 @@
 </header>
 
 <section class="hero">
-  <h2>Rooted in Nature, Refined by Science</h2>
-  <p>
-    At <strong>Melino</strong>, our mission is to craft high-performance skincare that blends the wisdom of natural herbs with the precision of modern science. Every product we create — from our dermatologist-tested procedures — is thoughtfully formulated to nourish, protect, and elevate your skin.<br><br>
-    We are committed to safe, effective, and honest skincare powered by nature-backed ingredients and clinically proven actives. As we grow, we aim to bring the same integrity and innovation to haircare and oral wellness — creating routines that truly care for you, from root to radiance.
-  </p>
+  <img src="image2.png" alt="Melino™ Hero Image" />
+  <div class="hero-text">
+    <h2>Rooted in Nature, Refined by Science</h2>
+    <p>
+      At <strong>Melino™</strong>, our mission is to craft high-performance skincare that blends the wisdom of natural herbs with the precision of modern science. Every product we create — from our dermatologist-tested procedures — is thoughtfully formulated to nourish, protect, and elevate your skin.<br><br>
+      We are committed to safe, effective, and honest skincare powered by nature-backed ingredients and clinically proven actives. As we grow, we aim to bring the same integrity and innovation to haircare and oral wellness — creating routines that truly care for you, from root to radiance.
+    </p>
+  </div>
 </section>
 
 <section class="contact">
@@ -100,7 +141,7 @@
 </section>
 
 <footer>
-  &copy; 2025 Melino. All rights reserved.
+  &copy; 2025 <strong>Melino™</strong>. All rights reserved.
 </footer>
 
 </body>
