@@ -12,6 +12,18 @@
       color: #3a3a3a;
     }
 
+    /* Top Headline */
+    .top-headline {
+      text-align: center;
+      font-size: 38px;
+      font-weight: 700;
+      padding: 20px 0 10px;
+      color: #5a2f2f;
+      background-color: #f5efeb;
+      letter-spacing: 2px;
+    }
+
+    /* Header */
     header {
       display: flex;
       align-items: center;
@@ -24,7 +36,10 @@
 
     header img {
       height: 6.25vh;
+      min-height: 100px;
+      min-width: 100px;
       width: auto;
+      object-fit: contain;
     }
 
     .brand-title {
@@ -43,6 +58,7 @@
       font-weight: 500;
     }
 
+    /* Hero Section */
     .hero {
       display: flex;
       flex-wrap: wrap;
@@ -73,6 +89,7 @@
       line-height: 1.8;
     }
 
+    /* Contact Section */
     .contact {
       padding: 40px 20px;
       background-color: #f9f6f4;
@@ -90,6 +107,7 @@
       margin: 4px;
     }
 
+    /* Footer */
     footer {
       text-align: center;
       padding: 20px;
@@ -97,6 +115,7 @@
       color: #aaa;
     }
 
+    /* Mobile Adjustments */
     @media (max-width: 768px) {
       .brand-title {
         font-size: 22px;
@@ -114,35 +133,42 @@
 </head>
 <body>
 
-<header>
-  <img src="logo.png" alt="Melino Logo">
-  <div class="brand-title">Melino™</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="product.html">Products</a>
-  </nav>
-</header>
+  <!-- Top Headline -->
+  <div class="top-headline">MELINO</div>
 
-<section class="hero">
-  <img src="A_website_homepage_for_Melino,_a_skincare_brand_th.png" alt="Melino™ Hero Image" />
-  <div class="hero-text">
-    <h2>Rooted in Nature, Refined by Science</h2>
-    <p>
-      At <strong>Melino™</strong>, our mission is to craft high-performance skincare that blends the wisdom of natural herbs with the precision of modern science. Every product we create — from our dermatologist-tested procedures — is thoughtfully formulated to nourish, protect, and elevate your skin.<br><br>
-      We are committed to safe, effective, and honest skincare powered by nature-backed ingredients and clinically proven actives. As we grow, we aim to bring the same integrity and innovation to haircare and oral wellness — creating routines that truly care for you, from root to radiance.
-    </p>
-  </div>
-</section>
+  <!-- Header with Logo and Nav -->
+  <header>
+    <img src="logo.png" alt="Melino Logo">
+    <div class="brand-title">Melino™</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+    </nav>
+  </header>
 
-<section class="contact">
-  <h3>Contact Us</h3>
-  <p>Email: <a href="mailto:zattvaproductions@gmail.com">zattvaproductions@gmail.com</a></p>
-  <p>Phone: <a href="tel:+919205972149">+91 92059 72149</a></p>
-</section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="A_website_homepage_for_Melino,_a_skincare_brand_th.png" alt="Melino™ Hero Image" />
+    <div class="hero-text">
+      <h2>Rooted in Nature, Refined by Science</h2>
+      <p>
+        At <strong>Melino™</strong>, our mission is to craft high-performance skincare that blends the wisdom of natural herbs with the precision of modern science. Every product we create — from our dermatologist-tested procedures — is thoughtfully formulated to nourish, protect, and elevate your skin.<br><br>
+        We are committed to safe, effective, and honest skincare powered by nature-backed ingredients and clinically proven actives. As we grow, we aim to bring the same integrity and innovation to haircare and oral wellness — creating routines that truly care for you, from root to radiance.
+      </p>
+    </div>
+  </section>
 
-<footer>
-  &copy; 2025 <strong>Melino™</strong>. All rights reserved.
-</footer>
+  <!-- Contact Section -->
+  <section class="contact">
+    <h3>Contact Us</h3>
+    <p>Email: <a href="mailto:zattvaproductions@gmail.com">zattvaproductions@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919205972149">+91 92059 72149</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 <strong>Melino™</strong>. All rights reserved.
+  </footer>
 
 </body>
 </html>
