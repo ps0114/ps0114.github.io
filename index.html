@@ -23,9 +23,13 @@
     }
 
     header img {
-      height: 6.25vh;
-      width: auto;
-    }
+  height: 6.25vh;      /* 1/16 of screen height */
+  width: auto;
+  min-height: 100px;   /* Minimum height to ensure visibility */
+  min-width: 100px;
+  max-height: 120px;   /* Optional: cap size on very tall screens */
+  object-fit: contain;
+}
 
     .brand-title {
       position: absolute;
